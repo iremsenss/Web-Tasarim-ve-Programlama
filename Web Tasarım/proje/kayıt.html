@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kayıt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="title">ÜYE GİRİŞİ
+        </div>
+        <div class="social_media">
+            <div class="item">
+                <i class="fab fa-twitter footer_mid_icons_inner"></i>
+            </div>
+            <div class="item">
+                <i class="fab fa-instagram footer_mid_icons_inner"></i>
+            </div>
+            <div class="item">
+                <i class="fab fa-youtube footer_mid_icons_inner"></i>
+            </div>
+            
+        </div>
+
+        <form action="kayıt.php" method="POST">
+        <div class="form">
+            <div class="input_field">
+                <input type="text" placeholder="Username" class="input" name="kullancıadı">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" class="input" name="email">
+                <i class="far fa-envelope"></i>
+            </div>
+            <div class="input_field">
+                <input type="Password" placeholder="Password" class="input" name="parola">
+                <i class="fas fa-lock"></i>
+                </div>
+                <div class="btn">
+                    <a href="#"><input type="submit" name="kaydet">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+        </form>
+
+    </div>
+</body>
+</html>

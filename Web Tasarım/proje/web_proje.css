@@ -1,0 +1,1020 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.anasayfa {
+    background: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.6)), url('fitnesss.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+nav {
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+}
+
+.nav-links {
+    background-color: #c2b1b100;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: ivory
+}
+
+.logo span {
+    color: orange;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    margin-right: 180px;
+    margin-left: 35px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.social a {
+    right: 0;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.social a i:hover {
+    color: orange;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: orange
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: orange;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.social a:first-child,
+.social a:last-child {
+    display: none;
+
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main h2 {
+    font-size: 30px;
+    color: rgba(255, 255, 254, 0.84);
+    text-transform: uppercase;
+}
+
+.main h1 {
+    font-size: 60px;
+    color: rgb(255, 166, 0);
+    text-transform: uppercase;
+}
+
+.main p {
+    font-size: 30px;
+    color: #ffffffb6;
+}
+
+.button {
+    text-decoration: none;
+    border: 1px solid orange;
+    padding: 15px 35px;
+    margin-top: 45px;
+    color: #ffffffa7;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: orange;
+}
+
+
+@media (max-width:952px) {
+    .social {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid black;
+
+    }
+
+    .social a {
+        margin: 10px 0;
+    }
+
+    .main h2 {
+        font-size: 60px;
+    }
+
+    .main h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width:650px) {
+    .nav-links {
+        position: absolute;
+
+    }
+
+    .nav-links ul {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        width: 250px;
+        height: 100vh;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid black;
+        transition: right;
+    }
+
+    .nav-links ul li {
+        flex-basis: 40px;
+        flex-grow: 1;
+        max-height: 80px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logo {
+        text-align: center;
+        flex: 1;
+    }
+
+    .nav-links ul.opened {
+        right: 40px;
+
+    }
+
+    .sociala:first-child,
+    .social a:last-child {
+        position: fixed;
+        top: 0;
+    }
+
+    .social a:last-child {
+        display: block;
+    }
+
+    ul.opened~.social a:first-child {
+        display: block;
+    }
+
+    ul.opened~.social a:last-child {
+        display: none;
+    }
+
+}
+
+
+#about {
+    height: 900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.895), rgba(0, 0, 0, 0.697)), url(fitness4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.about-text {
+    margin-top: 300px;
+    margin-left: 40px;
+
+}
+
+.about-text h1 {
+    color: rgb(249, 182, 57);
+    padding: 30px;
+    width:1000px;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.about-text p {
+    width: 800px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 7px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+#about-card{
+    width: 300px;
+    height: 500px;
+    float:right;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.122)), url(fitness9.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 50%; */
+    background-size: cover;
+    margin-top: -450px;
+    margin-right:200px;
+    border-radius: 1300px;
+
+}
+#about-card:hover {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+#lessons {
+    background: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.442)), url(https://spaces.w3schools.com/images/xwMlVSqP20U.jpg);
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+#lessons-text {}
+
+#card1 {
+
+    width: 300px;
+    height: 300px;
+    background-color: rgba(248, 180, 55, 0.844);
+    margin: 250px 0px 0px 240px;
+    border-radius: 7px;
+    display: inline-block;
+    background-image: url(fitness2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+#card1:hover {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#card1 h2 {
+    font-size: 20px;
+    font-weight: 40;
+    margin-left: 75px;
+    color: rgb(242, 174, 47);
+
+}
+
+#card2 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(248, 180, 55, 0.844);
+    border-radius: 7px;
+    display: inline-block;
+    margin-left: 50px;
+    background-image: url(pilates.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+#card2:hover {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#card2 h2 {
+    font-size: 20px;
+    font-weight: 40;
+    margin-left: 75px;
+    color: rgb(249, 182, 59);
+}
+
+#card3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(248, 180, 55, 0.844);
+    margin-left: 50px;
+    border-radius: 7px;
+    display: inline-block;
+    background-image: url(yoga.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+#card3:hover {
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#card3 h2 {
+    font-size: 20px;
+    font-weight: 40;
+    margin-left: 75px;
+    color: rgb(248, 180, 54);
+}
+
+
+#Dietitian {
+    background: linear-gradient(rgba(0, 0, 0, 0.845), rgba(0, 0, 0, 0.747)), url(dietetition.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+
+}
+
+#dietitian1 {
+    margin-top: 140px;
+    margin-left: 80px;
+    display: inline-block;
+}
+
+#dietitian2 {
+    display: inline-block;
+}
+
+#dietitian3 {
+    display: inline-block;
+}
+
+#dietitian4 {
+    display: inline-block;
+}
+
+#dietitian5 {
+    display: inline-block;
+}
+
+
+#dietitian1 p {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: rgb(249, 180, 53);
+    border-radius: 7px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.7;
+    font-size: 20px;
+    color: #fff;
+    font-size: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        margin-top: 200px;
+
+    }
+}
+
+#dietitian2 p {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: rgb(249, 180, 53);
+    border-radius: 7px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.7;
+    font-size: 20px;
+    color: #fff;
+    font-size: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        margin-top: 200px;
+
+    }
+}
+
+#dietitian3 p {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: rgb(249, 180, 53);
+    border-radius: 7px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.7;
+    font-size: 20px;
+    color: #fff;
+    font-size: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        margin-top: 200px;
+
+    }
+}
+
+#dietitian4 p {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: rgb(249, 180, 53);
+    border-radius: 7px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.7;
+    font-size: 20px;
+    color: #fff;
+    font-size: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        margin-top: 200px;
+
+    }
+}
+
+#dietitian5 p {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: rgb(249, 180, 53);
+    border-radius: 7px;
+    margin-left: 110px;
+    text-align: center;
+    padding: 30px;
+    opacity: 0.7;
+    font-size: 20px;
+    color: #fff;
+    font-size: 15px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+
+
+    }
+}
+
+
+#blog{
+    background:linear-gradient(rgba(0, 0, 0, 0.948), rgba(0, 0, 0, 0.827)),url(fitness.jpg);
+    height:2000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+.about-us-grid-card{
+    display: inline-block;
+    margin: 10px;
+   
+}
+
+
+
+.category-title {
+    font-size: 20px;
+    text-decoration: none;
+    color: orange;
+    margin: 10px;
+}
+
+.content-title {
+    text-decoration: none;
+    font-size: 15px;
+    color:#fff;
+    
+}
+
+.description {
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    color: #fff;
+}
+
+
+
+
+#gallery {
+    background: linear-gradient(rgba(0, 0, 0, 0.948), rgba(0, 0, 0, 0.877)), url(resim7.jpg);
+    height: 1300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+
+}
+
+#resim1 img {
+    margin-top: 100px;
+    margin-left: 80px;
+    float: left;
+    width: 400px;
+    height: 300px;
+
+}
+
+#resim2 img {
+    margin: 100px 0px 0px 80px;
+    float: left;
+    width: 350px;
+    height: 300px;
+}
+
+#resim3 img {
+    margin: 100px 0px 0px 30px;
+    float: left;
+    width: 500px;
+    height: 300px;
+}
+
+#resim4 img {
+    margin: 50px 0px 0px 80px;
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+#resim5 img {
+    margin: 50px 0px 0px 30px;
+    float: left;
+    width: 500px;
+    height: 400px;
+}
+
+#resim6 img {
+    margin: 20px 0px 0px 80px;
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+#resim7 img {
+    margin: 50px 0px 0px 30px;
+    float: left;
+    width: 300px;
+    height: 400px;
+}
+
+#resim8 img {
+    margin: 20px 0px 0px 30px;
+    float: left;
+    width: 850px;
+    height: 400px;
+}
+
+#content {
+    background: linear-gradient(rgba(0, 0, 0, 0.889), rgba(0, 0, 0, 0.873)), url(resim9.jpg);
+    background-size: cover;
+    padding: 50px;
+    height: auto;
+    text-align: center;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+#h3iletisim {
+    margin-top: 70px;
+    color: rgb(252, 193, 83);
+
+}
+
+#iletisimopak {
+    margin: 40px 0px 0px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    height: 500px;
+    border-radius: 8px;
+}
+
+#formgroup {
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+    margin: 20px 0px 200px 50px;
+}
+
+#solform {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#sagform {
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    background-color: #ffffffb7;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: rgba(246, 182, 63, 0.921);
+    font-size: 18px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-left: 280px;
+
+}
+
+#adres {
+    margin-top: 50px;
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    text-align: left;
+}
+
+#adresbaslik {
+    font-size: 30px;
+    color: orange;
+}
+
+.adresp {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+#altmenu {
+    margin-left: -50px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+#copyright {
+    color: #fff;
+    margin: 30px;
+}
+
+
+
+
+
+
+.footer_section{
+
+    margin: 0 auto;
+}
+
+
+.subscriber_head{
+
+    background-color: black;
+    /* display: flex; */
+    display: grid;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "head input subscribe";
+}
+
+.subscriber_search_box{
+
+    margin: auto;
+    display: flex;
+    width: 100%;
+    grid-area: input;
+}
+
+.subscriber_search_bar{
+    width: 100%;
+    max-width: 100%;
+    font-family: inherit;
+    color:black;
+    font-weight: 500;
+    border-radius:50px 0px 0px 50px;
+    border: 0px;
+    padding: 15px 0px 15px 20px;
+    font-size: 14px;
+    background: #F0F4EF;
+}
+
+.subscriber_head h1{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: sans-serif;
+    grid-area: head;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.subscriber_button{
+    border: 0px;
+    width: 150px;
+    max-width: 100%;
+    font-size: 700;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 4px;
+    grid-area: subscribe;
+    font-family: sans-serif;
+    background:orange;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    border-radius: 0px 50px 50px 0px;
+    outline: 0;
+    transition: all 0.2s;
+}
+
+.subscriber_mid{
+
+    background-color:rgba(250, 181, 51, 0.921);
+    width: 100%;
+    /* height: 180px; */
+    height: 200px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 0.7fr 0.01fr 1.6fr 0.01fr 1fr;
+    grid-template-areas: 
+    "first line second line2 last";
+}
+
+
+.first_para{
+
+    margin-left: 10%;
+    margin-bottom: auto;
+    margin-top: auto;
+    grid-area: first;
+}
+
+#footer_first_head{
+    font-weight: lighter;
+}
+
+.vertical {
+    border-left: 1px solid #0000004d;
+    height: 156px;
+    grid-area: line;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.vertical2{
+    border-left: 1px solid #0000004d;
+    height: 156px;
+    grid-area: line2;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.middle_para{
+    grid-area: second;
+    display: flex;
+}
+
+.last_para{
+    grid-area: last;
+}
+
+.footer_About{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.footer_About_para{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.footer_About_head{
+
+    color: black;
+}
+
+.footer_About_links{
+
+    font-weight: lighter;
+    color: black;
+}
+.footer_logo span{
+    color: white;
+}
+.footer_logo h1{
+    color:orange;
+}
+
+
+
+.last_para{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer_form_mid{
+
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+}
+
+
+.subscriber_button:hover{
+    background: orangered;
+}
+
+
+.footer_mid_icons{
+    margin: 2%;
+}
+
+.footer_mid_icons_inner:hover{
+    color: orange;
+}
+
+
+.footer_last{
+    margin-bottom: 4%;
+}
+
+
+.footer_mid_icons_inner{
+    font-size: 2rem;
+    color:#fff;
+}
+.contacts h4 {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.icon_section{
+    display: block;
+    margin-left: 15%;
+}
+
+
+
+.subscriber_last{
+    background-color:black;
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 2fr 0.01fr 3fr 1fr;
+    grid-template-areas: 
+    "logo line3 mid-section copyright";
+     
+}
+
+
+.footer_logo_last{
+ 
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer_logo_last h1{
+    color: #fff;
+}
+.footer_logo_last span{
+    color: orange;
+}
+
+.vertical3{
+    border-left: 1px solid #0000004d;
+    height: 15px;
+    grid-area: line3;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer_last_mid_para{
+
+margin-top: auto;
+margin-bottom: auto;
+
+}
+
+#unleash{
+
+    color: white;
+    font-weight: lighter;
+
+}
+
+.copyright2{
+
+    color: white;
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+.footer_last_last_para{
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
